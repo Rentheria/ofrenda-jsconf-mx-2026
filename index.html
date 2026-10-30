@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Mi ofrenda digital</title>
+    <title>Ofrenda a las tecnologías web que se fueron</title>
     <meta name="description" content="Una ofrenda digital de Día de Muertos publicada con AWS Amplify Hosting." />
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 2c4 6 8 10 8 17a8 8 0 0 1-16 0c0-7 4-11 8-17z' fill='%23FF9F1C'/%3E%3C/svg%3E" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -43,7 +43,7 @@
         TODO 1: ¿Para quién es tu ofrenda? Escribe su nombre, un apodo o el tema de tu ofrenda.
         Ejemplo: <h1 class="titulo">Para mi abuela Lupita</h1>
       -->
-      <h1 class="titulo">Escribe el título de tu ofrenda</h1>
+      <h1 class="titulo">Ofrenda a las tecnologías web que se fueron</h1>
 
       <div class="altar">
         <div class="dedicatoria" id="dedicatoria">
@@ -55,7 +55,9 @@
             Ejemplo: Por sus tamales de los domingos y por enseñarme a bailar cumbia en la cocina.
           -->
           <p class="texto-dedicatoria">
-            Escribe aquí tu dedicatoria: a quién recuerdas y por qué.
+            A Internet Explorer, Flash, <code>var</code>, jQuery, <code>&lt;marquee&gt;</code>
+            y las tablas para maquetar: nos hicieron sufrir, pero también nos enseñaron
+            a programar. Que descansen en <code>localhost</code> y que su <code>404</code> sea eterno. 🕯️
           </p>
         </div>
 
@@ -67,7 +69,7 @@
             Tu página va a ser pública, así que usa una foto que quieras compartir.
             Ejemplo: <img class="retrato" src="abuela-lupita.jpg" alt="Mi abuela Lupita en su cocina" />
           -->
-          <img class="retrato" src="foto-ejemplo.svg" alt="Espacio para la foto de la ofrenda" />
+          <img class="retrato" src="monitor-crt-calaverita.jpg" alt="Monitor CRT antiguo con una calaverita de azúcar en la pantalla, rodeado de cempasúchil, velas, un disquete y un mouse de bolita" />
           <div class="vela" aria-hidden="true">
             <span class="llama"></span>
             <span class="cera"></span>
@@ -97,6 +99,18 @@
       <button id="boton-vela" class="boton" type="button" aria-pressed="false" aria-controls="dedicatoria">
         Encender la vela
       </button>
+
+      <!-- Extra: las cosas favoritas de los difuntos, puestas en el altar -->
+      <section class="favoritos" aria-labelledby="titulo-favoritos">
+        <h2 id="titulo-favoritos" class="favoritos-titulo">Sus cosas favoritas</h2>
+        <p class="marquesina" aria-hidden="true"><span>✨ Bienvenido a mi ofrenda ✨ Mejor visto en Internet Explorer 6 a 800×600 ✨ Requiere Flash Player ✨</span></p>
+        <ul class="favoritos-lista">
+          <li><span class="en-construccion">🚧 En construcción 🚧</span></li>
+          <li>Eres el visitante número <span class="contador" id="contador">000000</span></li>
+          <li><code>$(document).ready()</code> y su <code>&lt;table&gt;</code> anidada de cinco niveles</li>
+          <li><button class="boton-alert" id="boton-alert" type="button">Un último <code>alert()</code></button></li>
+        </ul>
+      </section>
     </main>
 
     <footer class="pie">
